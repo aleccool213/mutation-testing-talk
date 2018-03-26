@@ -3,24 +3,33 @@
   "version": "1.0.1",
   "description": "ReactJS Powered Presentation Framework",
   "main": "lib/index.js",
+  "repository": "https://github.com/aleccool213/mutation-testing-talk",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.production.js",
+    "build":
+      "cross-env NODE_ENV=production webpack --config webpack.config.production.js",
     "lint": "eslint --ext .js,.jsx .",
-    "deploy": "npm run clean & npm run build && surge -p .",
-    "export": "spectacle-renderer --delay 3000",
-    "start": "cross-env NODE_ENV=development node server.js"
+    "dxport": "spectacle-renderer --delay 3000",
+    "start": "cross-env NODE_ENV=development node server.js",
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "cross-env": "^5.1.4",
     "normalize.css": "7.0.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "spectacle": "^4.0.0",
-    "spectacle-renderer": "^0.0.3"
+    "spectacle-renderer": "^0.0.3",
+    "stryker": "^0.20.1",
+    "systemjs": "^0.21.0",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.7.2"
   },
   "devDependencies": {
+    "@types/jasmine": "^2.8.6",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.1",
@@ -36,8 +45,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-runtime": "^6.26.0",
-    "cross-env": "^5.1.0",
-    "css-loader": "^0.28.7",
+    "css-loader": "^0.28.11",
     "eslint": "^4.9.0",
     "eslint-config-formidable": "^3.0.0",
     "eslint-plugin-filenames": "^1.2.0",
@@ -47,19 +55,35 @@
     "file-loader": "^1.1.5",
     "html-loader": "^0.5.1",
     "is-buffer": "^1.1.5",
-    "markdown-loader": "^2.0.1",
+    "jest": "^22.4.3",
+    "markdown-loader": "^2.0.2",
     "node-libs-browser": "^2.0.0",
     "raw-loader": "^0.5.1",
     "react-hot-loader": "^3.1.1",
     "react-transform-catch-errors": "^1.0.2",
     "redbox-react": "^1.5.0",
     "rimraf": "^2.6.2",
+    "stryker-api": "^0.14.0",
+    "stryker-html-reporter": "^0.12.4",
+    "stryker-jest-runner": "^0.5.1",
+    "stryker-typescript": "^0.9.4",
     "style-loader": "^0.19.0",
-    "surge": "latest",
+    "ts-jest": "^22.4.2",
     "url-loader": "^0.6.2",
     "webpack": "3.8.1",
     "webpack-dev-middleware": "^1.12.0",
-    "webpack-dev-server": "^2.9.3",
-    "webpack-hot-middleware": "^2.20.0"
-  }
+    "webpack-dev-server": "^3.1.1",
+    "webpack-hot-middleware": "^2.21.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+  },
+  "testEnvironment": "node",
+  "collectCoverage": true,
+  "moduleFileExtensions": ["ts", "js"],
+  "coverageDirectory": "./reports/jest"
 }

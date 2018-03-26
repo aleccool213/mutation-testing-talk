@@ -1,0 +1,7 @@
+{
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+  "tslint.enable": false,
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true
+}

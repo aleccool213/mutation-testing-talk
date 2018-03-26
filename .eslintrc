@@ -8,10 +8,12 @@
   "no-magic-numbers": 0
   "react/prefer-es6-class": 0
   "react/no-multi-comp": 0
+  "quotes": 0
 
 "env":
   "browser": true,
-  "node": true
+  "node": true,
+  "jasmine": true
 "globals":
   "afterEach": true,
   "describe": true,

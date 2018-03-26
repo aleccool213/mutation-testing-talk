@@ -1,0 +1,2 @@
+{"/Users/alecbrunelle/Github/mutation-testing-talk/src/sample-module/sample.ts": {"path":"/Users/alecbrunelle/Github/mutation-testing-talk/src/sample-module/sample.ts","statementMap":{"0":{"start":{"line":7,"column":13},"end":{"line":9,"column":2}},"1":{"start":{"line":8,"column":2},"end":{"line":8,"column":18}}},"fnMap":{"0":{"name":"(anonymous_0)","decl":{"start":{"line":7,"column":27},"end":{"line":7,"column":28}},"loc":{"start":{"line":7,"column":48},"end":{"line":9,"column":1}}}},"branchMap":{},"s":{"0":1,"1":1},"f":{"0":1},"b":{}}
+}
