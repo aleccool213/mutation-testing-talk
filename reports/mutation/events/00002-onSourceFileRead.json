@@ -1,0 +1,1 @@
+{"path":"/Users/alecbrunelle/Github/mutation-testing-talk/src/sample-module/sample-bad.ts","content":"import { isOldEnough } from './sample';\n\nconsole.log(isOldEnough({ age: 30 }));\n"}
