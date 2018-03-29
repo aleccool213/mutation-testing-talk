@@ -207,6 +207,12 @@ export default class Presentation extends React.Component {
             If a test case passes, it's a "mutation", destroy it
           </Heading>
         </Slide>
+        <Slide transition={['slide']} bgColor="tertiary" textColor="secondary">
+          <Heading size={3}>Goals</Heading>
+          <List>
+            <ListItem>No mutants survive</ListItem>
+          </List>
+        </Slide>
         <Slide
           transition={['slide']}
           bgColor="tertiary"
@@ -255,9 +261,22 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide
           transition={['slide']}
+          bgColor="tertiary"
+          textColor="secondary"
+          notes={'talk here about why stryker was good'}
+        >
+          <List>
+            <ListItem>Fairly easy to setup</ListItem>
+            <ListItem>Pretty speedy</ListItem>
+            <ListItem>Extendable, built with great plugin support</ListItem>
+          </List>
+        </Slide>
+        <Slide
+          transition={['slide']}
           bgColor="primary"
           textColor="tertiary"
           notes={
+            '- go through setup' +
             '- take a peak at code and test again' +
             '- run stryker, notice core count' +
             '- look and explain html report'
@@ -293,35 +312,16 @@ export default class Presentation extends React.Component {
           </Heading>
           <List>
             <ListItem>Run Sunday morning in your CI</ListItem>
+            <ListItem>Check reports to see if valid mutations arise</ListItem>
             <ListItem>
-              Check html report to see if valid mutations arise
+              Fail the build if your mutation coverage score rises
             </ListItem>
           </List>
         </Slide>
         <Slide transition={['slide']} bgColor="tertiary" textColor="secondary">
           <Heading size={2} fit caps lineHeight={1} textColor="secondary">
-            Improvements I can forsee:
+            Experiment with flyer-pipeline
           </Heading>
-          <List>
-            <ListItem>Mark off mutations as invalid</ListItem>
-            <ListItem> </ListItem>
-          </List>
-        </Slide>
-        <Slide transition={['slide']} bgColor="tertiary" textColor="secondary">
-          <Heading size={2} fit caps lineHeight={1} textColor="secondary">
-            References:
-          </Heading>
-          <List>
-            <ListItem />
-          </List>
-        </Slide>
-        <Slide transition={['slide']} bgColor="tertiary" textColor="secondary">
-          <Heading size={2} fit caps lineHeight={1} textColor="secondary">
-            Beyond:
-          </Heading>
-          <List>
-            <ListItem>mutation-testing slack chat</ListItem>
-          </List>
         </Slide>
       </Deck>
     );

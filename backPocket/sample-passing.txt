@@ -1,0 +1,4 @@
+  // it('should return true if old enough', () => {
+  //   const person = { age: 30 };
+  //   expect(isOldEnough(person)).toEqual(true);
+  // });
