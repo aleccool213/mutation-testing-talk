@@ -11,6 +11,6 @@ describe('funcThatCallsCriticalFunction', () => {
     // we for some reason care this is not called
     expect(criticalFunction2).not.toHaveBeenCalled();
 
-    // expect(criticalFunction).toHaveBeenCalled();
+    expect(criticalFunction).toHaveBeenCalled();
   });
 });

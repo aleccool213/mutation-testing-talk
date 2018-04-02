@@ -5,5 +5,5 @@
  * @return {Boolean} Is the person older or equal to 30?
  */
 export const isOldEnough = ({ age }): boolean => {
-  return age > 30;
+  return age >= 30;
 };

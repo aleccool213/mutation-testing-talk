@@ -1,12 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1522032332526" clover="3.2.0">
-  <project timestamp="1522032332526" name="All files">
-    <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="3" coveredelements="3" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1">
-      <file name="sample.ts" path="/Users/alecbrunelle/Github/mutation-testing-talk/src/sample-module/sample.ts">
+<coverage generated="1522337975901" clover="3.2.0">
+  <project timestamp="1522337975901" name="All files">
+    <metrics statements="13" coveredstatements="13" conditionals="3" coveredconditionals="3" methods="6" coveredmethods="4" elements="22" coveredelements="20" complexity="0" loc="13" ncloc="13" packages="3" files="6" classes="6">
+      <package name="src.sample-module">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-      </file>
+        <file name="sample.ts" path="/Users/alecbrunelle/Github/mutation-testing-talk/src/sample-module/sample.ts">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="src2.sample-module">
+        <metrics statements="5" coveredstatements="5" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <file name="isOldEnough.ts" path="/Users/alecbrunelle/Github/mutation-testing-talk/src2/sample-module/isOldEnough.ts">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+        </file>
+        <file name="sample2.ts" path="/Users/alecbrunelle/Github/mutation-testing-talk/src2/sample-module/sample2.ts">
+          <metrics statements="3" coveredstatements="3" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="14" count="1" type="cond" truecount="3" falsecount="0"/>
+        </file>
+      </package>
+      <package name="src3.sample-module">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <file name="criticalFunction.ts" path="/Users/alecbrunelle/Github/mutation-testing-talk/src3/sample-module/criticalFunction.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+        <file name="criticalFunction2.ts" path="/Users/alecbrunelle/Github/mutation-testing-talk/src3/sample-module/criticalFunction2.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+        <file name="sample3.ts" path="/Users/alecbrunelle/Github/mutation-testing-talk/src3/sample-module/sample3.ts">
+          <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+        </file>
+      </package>
     </metrics>
   </project>
 </coverage>
